@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/main.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="shortcut icon" href="/images/logo.svg" type="image/x-icon">
+    <title>CraftsConnect</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="title">CraftsConnect</h1>
+        </div>
+        <div class="search">
+            <input type="search" class="input search-input" placeholder="Search Crafts">
+            <button class="btn search-btn">search</button>
+        </div>
+        <div class="icons">
+            <span class="header-icon">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </span>
+            <span class="header-icon">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </span>
+            <span class="header-icon">
+                <a href="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                <p class="para-text cart-number">0</p>
+            </span>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-list">
+            <li class="list-item"><a href="/index" class="nav-link">Home</a></li>
+            <li class="list-item"><a href="/about" class="nav-link">About</a></li>
+            <li class="list-item"><a href="/crafts" class="nav-link">Crafts</a></li>
+            <li class="list-item"><a href="/upload" class="nav-link active">Upload</a></li>
+            <li class="list-item"><a href="/contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <section id="upload">
+            <h2 class="title">Upload New Product</h2>
+            <form action="" method="POST" class="form">
+                <div class="field">
+                    <label for="product-name">Product name</label>
+                    <input type="product-name" name="" id="product-name" class="input" required>
+                </div>
+                <div class="field">
+                    <label for="description">Description</label>
+                    <textarea type="text" name="" id="description" class="input" required></textarea>
+                </div>
+                <div class="field">
+                    <label for="price">Price</label>
+                    <input type="number" name="" min="0" id="price" class="input" required>
+                </div>
+                <div class="field">
+                    <label for="craft-type">Craft Type</label>
+                    <input type="craft-type" name="" id="craft-type" class="input" required>
+                </div>
+                <div class="field">
+                    <label for="product-img">Product</label>
+                    <input type="file" name="" id="product-img" accept="image/png, image/jpeg, image/svg" required>
+                </div>
+                <button class="btn msg-btn">Upload</button>
+                <!-- <p class="para-text">
+                    Already have an account. <a href="/craftsmanLogin" class="nav-link">Login here</a>
+                </p> -->
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer-nav">
+                <h3 class="title">Navigation</h3>
+                <ul>
+                    <li class="list-item"><a href="" class="nav-link">Home</a></li>
+                    <li class="list-item"><a href="" class="nav-link">About</a></li>
+                    <li class="list-item"><a href="" class="nav-link">Crafts</a></li>
+                    <li class="list-item"><a href="" class="nav-link">Services</a></li>
+                    <li class="list-item"><a href="" class="nav-link">Contact</a></li>
+                </ul>
+                <p class="para-text">Join as a craftsman <a href="/craftsmanSignup" class="craft-link">here</a></p>
+            </div>
+            <div class="footer-contact">
+                <h3 class="title">Contact Info</h3>
+                <div class="address">
+                    <div>
+                        <span>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </span>
+                        <p class="para-text">
+                            AR 22 St.Beige Link, <br>Accra-Ghana
+                        </p>
+                    </div>
+                    <div>
+                        <span>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </span>
+                        <p class="para-text">
+                            +233 555 000 0000
+                        </p>
+                    </div>
+                    <div>
+                        <span>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                        <a href="mailto:someone@example.com" class="nav-link contact-email">someone@example.com</a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <p class="para-text copyright">
+            Copyright&copy;2022 All rights reserved
+        </p>
+    </footer>
+</body>
+</html>

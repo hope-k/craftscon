@@ -1,0 +1,719 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.input {
+    font-size: 1.05rem;
+}
+
+.title, .para-text {
+    color: rgba(40, 39, 39, 0.843);
+}
+
+.active {
+    border-bottom: 2px solid rgba(40, 39, 39, 0.843);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color:rgba(40, 39, 39, 0.843);
+}
+
+.nav-link:hover, .nav-link:focus {
+    font-weight: 600;
+    border-bottom: 2px solid rgba(40, 39, 39, 0.843);
+}
+
+li {
+    list-style-type: none;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.buy-btn, .add-to-cart-btn {
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    padding: 0.5em 0;
+    font-weight: 600;
+    background-color: rgb(197, 153, 59);
+    color: rgb(255, 255, 255);
+}
+
+.buy-btn {
+    background-color: rgb(221, 200, 106);
+}
+
+.checkout-btn, .continue-shopping-btn {
+    color: rgb(255, 255, 255);
+    padding: 0.75em;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.checkout-btn {
+    background-color: rgb(221, 200, 106);
+}
+
+.continue-shopping-btn {
+    background-color: rgb(197, 153, 59);
+    margin-right: 1.5em;
+}
+
+.connect-btn {
+    color:rgb(255, 255, 255);
+    background-color: rgb(197, 153, 59);
+    margin-top: 1em;
+    padding: 0.2em 0;
+    font-weight: 600;
+    display: block;
+}
+
+.edit-btn, .update-btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.edit-btn {
+    background-color: rgb(197, 153, 59);
+}
+
+.update-btn {
+    background-color: rgb(221, 200, 106);
+}
+
+#about-craftsman {
+    width: 100%;
+    padding: 1.5em;
+    margin-bottom: 2.5rem;
+    display: flex;
+}
+
+#about-craftsman .about-img {
+    width: 40%;
+}
+
+#about-craftsman .about-text {
+    width: 55%;
+    align-self: flex-start;
+}
+
+#about-craftsman .position {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+#about-craftsman .desc {
+    margin-bottom: 1em;
+}
+
+#about-craftsman h4 {
+    font-size: 1.5rem;
+}
+
+#about-craftsman .address, #about-craftsman .telephone {
+    margin-bottom: 0.7em;
+}
+
+#cart {
+    width: 100%;
+    padding: 1.5em;
+    margin-bottom: 3em;
+}
+
+#cart .title {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.cart-head, .cart-items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-bottom: 1px solid rgba(192, 192, 192, 0.455);
+}
+
+.cart-head {
+    background-color: rgba(192, 192, 192, 0.455);
+    color:rgb(117, 112, 112);
+    padding: 1.3rem;
+}
+
+.cart-items {
+    padding: 1em 1.5em 1.5em 0;
+    margin-bottom: 1em;
+}
+
+.cart-head div {
+    font-weight: 600;
+}
+
+.cart-head div:not(last-child), 
+.cart-items div:not(last-child) {
+    margin-right: 1.5em;
+}
+
+.cart-img img{
+    height: 100px;
+    object-fit: cover;
+}
+
+.item-id, .cart-name, .cart-price, .cart-qty,
+.cart-total-price {
+    align-self: center;
+}
+
+.total-amount {
+    float: right;
+    text-align: right;
+    font-weight: 600;
+}
+
+.cart-buttons::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 2em 1.5em;
+    border-bottom: 0.05px solid rgba(192, 192, 192, 0.455);
+}
+
+header .title {
+    border: 2px solid rgba(40, 39, 39, 0.843);
+    font-family: Macondo;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.icons {
+    text-align: right;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-icon:nth-child(1), .header-icon:nth-child(2) {
+    display: none;
+}
+
+.user-option {
+    position: absolute;
+    right: 0;
+    background-color: rgba(40, 39, 39, 0.449);
+    display: none;
+}
+
+.user-option p:last-child {
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.user-option p {
+    margin-bottom: 0.5em;
+    padding: 0.3em 1em;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: rgb(232, 225, 225);
+    text-align: left;
+}
+
+.search {
+    text-align: center;
+}
+
+.search, .icons {
+    align-self: center;
+}
+
+.search-input {
+    width: 25em;
+    padding: 0 0.75em;
+    height: 2.1875em;
+}
+
+.search-btn {
+    height: 2.1875em;
+    text-transform: uppercase;
+    padding: 0 0.75em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(197, 153, 59);
+}
+
+.header-icon i {
+    font-size: 1.2rem;
+}
+
+.header-icon:nth-child(5) {
+    position: relative;
+}
+
+.header-icon:nth-child(5) p {
+    position: absolute;
+    top: -1em;
+    right: -1em;
+    background-color: rgb(197, 153, 59);
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 50%;
+    padding: 0.15em;
+}
+
+.header-icon:not(last-child) {
+    margin-right: 1em;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    padding: 2em 0;
+}
+
+.list-item {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+}
+
+#banner {
+    width: 100%;
+    display: flex;
+    padding: 2em;
+    background-color: rgb(221, 200, 106);
+    margin-bottom: 2em;
+}
+
+.banner-img {
+    width: 60%;
+    margin-right: 1.5em;
+}
+
+.banner-text {
+    width: 40%;
+    align-self: center;
+}
+
+.banner-text .title, .banner-text .para-text {
+    color:rgb(255, 255, 255);
+    margin-bottom: 1.5rem;
+}
+
+.banner-text .title {
+    font-size: 2rem;
+}
+
+.banner-text .para-text {
+    font-size: 1.1rem;
+}
+
+#shop-btn {
+    padding: 0.75em 1em;
+    background-color: rgb(197, 153, 59);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#shop-btn:hover, #shop-btn:focus {
+    border: none;
+}
+
+#information {
+    padding: 1em 2em;
+    margin-bottom: 2em;
+}
+
+.information-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-card {
+    display: flex;
+}
+
+.information-card span {
+    margin-right: 1em;
+}
+
+.information-card span i {
+    font-size: 2.5rem;
+}
+
+.information-card .title {
+    margin-bottom: 0.5em;
+}
+
+#featured-products {
+    padding: 1em 2em;
+    margin-bottom: 2em;
+}
+
+#featured-products .title {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.featured-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.featured-card {
+    width: 27%;
+    border: 1px solid rgba(192, 192, 192, 0.455);
+    text-align: center;
+    box-shadow: 0.001em 0.001em 0.5em rgba(192, 192, 192, 0.455);
+}
+
+.featured-card img {
+    height: 400px;
+    margin-bottom: 1em;
+}
+
+.featured-card .para-text {
+    padding-bottom: 1em;;
+}
+
+.featured-card .price {
+    font-weight: 500;
+}
+
+#about {
+    display: flex;
+    padding: 0 1.5em;
+    margin-bottom: 3em;
+}
+
+.about-img {
+    width: 60%;
+    margin-right: 2.5rem;
+}
+
+.about-text {
+    width: 40%;
+    align-self: center;
+}
+
+.about-text .title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.desc {
+    margin-bottom: 1rem;
+}
+
+#team {
+    width: 100%;
+    padding: 0 1.5em 1em 1.5em;
+    margin-bottom: 3.5em;
+}
+
+#team .title {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.team-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+}
+
+.team-card {
+    text-align: center;
+}
+
+.team-card img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.team-card .name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.team-card .position {
+    color: rgba(40, 39, 39, 0.449);
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+#contact {
+    padding: 2rem 1.5rem;
+    width: 100%;
+}
+
+#contact .title {
+    text-align: center;
+    margin-bottom: 0.8em;
+}
+
+.form {
+    width: 60%;
+    border: 1px solid rgba(192, 192, 192, 0.455);
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.form .field {
+    width: 80%;
+    margin: 0 auto 2em auto;
+}
+
+.field:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field:first-child span {
+    width: 45%;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.field .input {
+    width: 100%;
+    height: 2.5em;
+    padding: 1em;
+}
+
+.field #message {
+   height: 12.5em;
+   resize: none;
+}
+
+.msg-btn {
+    width: 80%;
+    height: 2.5em;
+    display: block;
+    margin: 0 auto 1em auto;
+    background-color: rgb(197, 153, 59);
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#detail {
+    width: 100%;
+    display: flex;
+    padding: 2em 1.5em;
+    justify-content: space-around;
+}
+
+.detail-img {
+    width: 40%;
+}
+
+.detail-text {
+    width: 50%;
+}
+
+.detail-text .title {
+    margin-bottom: 1em;
+    font-size: 2.5rem;
+}
+
+.detail-text .para-text {
+    margin-bottom: 1em;
+}
+
+.detail-text .price {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+#qty-text {
+    font-size: 1.3rem;
+}
+
+.decrease-btn, .increase-btn, .qty-num {
+    font-size: 1.5rem;
+    padding: 0.4em;
+    margin-bottom: 1.2em;
+}
+
+.decrease-btn, .increase-btn {
+    background-color: rgba(192, 192, 192, 0.455);
+}
+
+.detail-text .add-to-cart-btn {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1.2em 0;
+}
+
+#login, #signup {
+    padding: 2em 1.5em;
+    margin-bottom: 1em;
+}
+
+#login .title, #signup .title {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#login .field:first-child, #signup .field:first-child,
+#upload .field:first-child {
+    display: block;
+}
+
+#login p, #signup p {
+    text-align: center;
+}
+
+#service {
+    width: 100%;
+    padding: 2em 1.5em;
+    margin-bottom: 2em;
+}
+
+#service .title {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#service .team-card {
+    border: 1px solid rgba(192, 192, 192, 0.455);
+    padding: 1em;
+    box-shadow: 0.01em 0.01em 0.05em rgba(192, 192, 192, 0.455);
+}
+
+#profile {
+    width: 100%;
+    padding: 1.5em;
+    margin-bottom: 2em;
+}
+
+#profile .title {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#profile .buttons {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#profile #gender {
+    padding-top: 0.1em;
+    padding-bottom: 0;
+}
+
+#upload {
+    padding: 1.5em;
+    margin-bottom: 3em;
+}
+
+#upload .title {
+    margin-bottom: 1em;
+    text-align: center;;
+}
+
+#upload textarea {
+    height: 9.375em;
+    resize: none;
+}
+
+footer {
+    width: 100%;
+    padding: 3em 2em;
+    border-top: 0.1px solid rgba(192, 192, 192, 0.455);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3em;
+}
+
+.footer-nav {
+    width: 45%;
+}
+
+.footer-nav .title, .footer-contact .title {
+    margin-bottom: 1.5em;
+}
+
+.footer-nav ul {
+    margin-bottom: 1em;
+}
+
+.footer-nav .craft-link {
+    text-transform: lowercase;
+    font-weight: 600;
+}
+
+.footer-nav ul li{
+    display: inline-block;
+    padding: 0;
+}
+
+.footer-nav ul li:not(last-child) {
+    margin-right: 1em;
+}
+
+.footer-contact {
+    width: 45%;
+}
+
+.address div {
+    display: flex;
+}
+
+.address div span {
+    margin-right: 0.75em;
+}
+
+.address div:not(last-child) {
+    margin-bottom: 1em;
+}
+
+.address div span i {
+    font-size: 1.5rem;
+}
+
+.footer-nav a {
+    text-transform: capitalize;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
